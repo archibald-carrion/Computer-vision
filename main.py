@@ -1,7 +1,7 @@
 import cv2
 
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-images = ["images/linus_torvald.jpg", "images/photo.jpg", "images/star_wars.png", "images/v_cyberpunk.webp", "images/elon_musk.png","images/jeff_bezos.jpg",]
+images = ["images/anti-facerecognition2.webp", "images/anti-facerecognition1.webp", "images/linus_torvald.jpg", "images/photo.jpg", "images/star_wars.png", "images/v_cyberpunk.webp", "images/elon_musk.png","images/jeff_bezos.jpg",]
 
 #img = cv2.imread('images/jeff bezos.jpg', cv2.COLOR_BGR2GRAY)
 
@@ -10,7 +10,7 @@ continueCode = True
 
 while counter < 6 and continueCode:
     img = cv2.imread(images[counter], cv2.COLOR_BGR2GRAY)
-    faces = face_cascade.detectMultiScale(img, 1.3,4)
+    faces = face_cascade.detectMultiScale(img, 1.1,4)
     for (x , y , w , h) in faces:
         cv2.rectangle(img, (x,y), (x+w, y+h), (255, 0, 0), 2)
     
