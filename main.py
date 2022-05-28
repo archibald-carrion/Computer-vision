@@ -1,6 +1,6 @@
 import cv2
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-images = ["images/linus_torvald.jpg","images/star_wars.png", "images/v_cyberpunk.png", "images/elon_musk.png","images/jeff_bezos.jpg","images/anti_detection1.png","images/anti_detection2.png","images/anti_detection3.png","images/anti_detection4.png","images/terminator.png"]
+images = ["images/foto1.jpg","images/linus_torvald.jpg", "images/v_cyberpunk.png", "images/elon_musk.png","images/jeff_bezos.jpg","images/anti_detection1.png","images/anti_detection2.png","images/anti_detection3.png","images/anti_detection4.png","images/terminator.png"]
 #img = cv2.imread('images/jeff bezos.jpg', cv2.COLOR_BGR2GRAY)
 
 def detectHuman(theArray):
@@ -28,4 +28,3 @@ def detectHuman(theArray):
                 counter = counter + 1
 
 detectHuman(images)
-
